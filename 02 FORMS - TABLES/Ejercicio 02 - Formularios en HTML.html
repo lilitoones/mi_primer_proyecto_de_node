@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formularios</title>
+
+    </head>
+
+    <body>
+        
+    <!-- El body debe contener un formulario que cumpla las siguientes características
+    El atributo action será "/"
+    Debe contener los siguientes campos:
+    Un campo de texto llamado "nombre"
+    Un campo numérico llamado "edad"
+    Un campo de área de texto llamado "frase-favorita"
+    Un botón de envío
+    Un botón de reset-->  
+
+        <form action="/" method="get">
+            
+            <div>
+                <label for="nombre">Nombre</label> 
+                <input type="text" name="nombre" id="nombre" required/>
+            </div>
+            <br>
+            <div>
+                <label for="edad">Edad</label> 
+                <input type="number" name="edad" id="edad" required min="15" max="85"/>
+            </div>
+            <br>
+            <div>
+                <label for="frasefavorita">Frase Favorita</label> 
+                <input type="text" name="frasefavorita" id="frasefavorita" required/>
+            </div>
+            <br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Reset</button>
+
+
+        </form>
+
+
+    </body>
+
+</html>
+
