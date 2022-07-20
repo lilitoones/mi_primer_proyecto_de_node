@@ -1,0 +1,19 @@
+h2{
+    color: blueviolet;
+    
+}
+
+.encabezado{
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+
+/*el primer elemento de cada lista se muestre de color rojo 
+el primer elemento de la primera lista tenga un tamaño de letra de 2rem*/
+
+li#elemento-1 {
+    color: red;
+    font-size: 2rem;
+}
+
