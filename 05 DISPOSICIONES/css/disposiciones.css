@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.flex{
+    display: flex;
+    flex-direction: unset;
+    background-color: aquamarine;
+    height: 400px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: space-around;
+}
+
+/*Las imágenes deben tener 300 píxeles de ancho
+    Deben reagruparse (wrap) cuando el ancho del viewport cambia*/
+img{
+    width: 300px;
+    gap: 5px;
+}
+
+img:hover{
+    opacity: 0.3;
+    cursor: pointer;
+    }
+
+
+/*Los videos se trabajan de la siguiente manera::
+    en css se parametriza así: 
+    .video (este es el nombre de la clase, puede ser otro) {
+        width: 100vw; (el vw significa que ocupe todo el ancho)
+        height: 100vh; (el vh significa que ocupe todo el alto)
+        object-fit: cover; (significa que ocupa toda la pantalla, la rellena, no se colapsa)     
+
+*/
+
+
