@@ -1,0 +1,39 @@
+/*  Crea un botón con el texto "Pasa por encima" (TIP: Este texto debes agregarlo a través de un pseudo-elemento)
+    Utiliza las pseudo-clases para que cuando se pase el ratón por encima de este botón, el texto se vuelva blanco y el fondo de color verde
+    Utiliza los pseudo-elementos para cambiar el texto del botón a "¡Hecho!"*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.button {
+    width: 150px;
+    height: 50px;
+    background-color: aquamarine;
+    border-bottom: crimson;
+    font-style: italic;
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font: bold;
+
+}
+
+.button:hover {/*se utiliza cuando el raton pasa por encima*/
+    background-color: green;
+    color: white;
+
+}
+
+.button span{
+    display: none;
+}
+
+.button::after{
+    visibility: visible;
+    position: relative;
+    content: "¡Hecho!";
+}
+
+
+
+
