@@ -1,0 +1,63 @@
+.padre{
+    width: 400px;
+    height: 400px;
+    background-color: aquamarine;
+}
+
+.hijo{
+    width: 50%;
+    height: 50%;
+    background-color: blueviolet;
+    transition: transform 2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    /* estas son transiciones, linear,ease-out son opciones, en inspeccionar se marcan esas opciones y se ajusta la animación como yo quiera, luego copio (cubic-bezier) y pego en mi código, el segundo tiempo es de la transición del cubic, el primer tiempo del efecto del hover*/
+    
+}
+
+.padre:hover .hijo {
+    transform: translateX(100%);
+    background-color: crimson;
+    animation: saltarin 4s 3 alternate-reverse/*se utiliza para mantener esta animación todo el tiempo forwards; /*yo le doy el nombre que quiera a la animación*/
+    /*animation-play-state: paused; sirve para pausar la animación*/
+}
+
+@keyframes /*esta palabra se utiliza para crear la animación que coloqué arriba*/ saltarin{
+    0%{
+        background-color: darkgoldenrod;
+        transform: translateX(0%) translateY(0%);
+    }
+    25%{
+        background-color: maroon;
+        transform: translateX(100%) translateY(0%);
+    }
+    50%{
+        background-color: chocolate;
+        transform: translateX(100%) translateY(100%);
+    }
+    75%{
+        background-color: black;
+        transform: translateX(0%) translateY(100%);
+    }
+    100%{
+        background-color: chartreuse;
+        transform: translateX(0%) translateY(0%);
+    }
+}
+
+.circulomayor {
+    width: 400px;
+    height: 400px;
+    border-radius: 200px;
+    background-color: cornflowerblue;
+    gap: 50px;
+}
+
+.circulomenor{
+    width: 50%;
+    height: 50%;
+    border-radius: 200px;
+    background-color:burlywood;
+    position: relative;
+    align-content: stretch;
+
+}
+
